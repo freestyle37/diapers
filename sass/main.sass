@@ -24,11 +24,16 @@ body
   background: url('../img/name2.png')
   background-position-y: -34px
   padding: 80px 0
+  @media (max-width: 767px)
+    padding: 0
+    background: none
   & > div
     background: #{$color3}
 .huggies.main-container
   margin: 0px 80px 0px 80px
   box-shadow: 2px 3px 25.81px 3.19px rgba(0, 0, 0, 0.24)
+  @media (max-width: 767px)
+    margin: 0
 .header-main
   .header-inner
     display: flex
@@ -58,6 +63,11 @@ body
     background: #{$color4}
     text-align: center
     border-radius: 120px
+    @media (max-width: 870px) and (min-width: 770px)
+      right: 5px
+      top: 5px
+    @media (max-width: 767px)
+      display: none
     .ad-unit-inner
       position: relative
       .title-ru
@@ -91,6 +101,9 @@ body
         left: -200px
         background: #{$color6}
         border-radius: 200px / 50px
+        @media (max-width: 870px) and (min-width: 770px)
+          bottom: -230px
+          left: -208px
         .visitor-data-inner
           margin-top: 30px
           .visitor-data-form
@@ -135,12 +148,22 @@ body
   justify-content: space-between
   margin: 100px 60px 0px 60px
   padding-bottom: 20px
+  @media (max-width: 950px)
+    margin: 0
+  @media (max-width: 950px) and (min-width: 768px)
+    margin: 200px 0 0 0
+  @media (max-width: 767px)
+    flex-wrap: wrap
+    justify-content: center
   & > .block
     flex-basis: 25%
     margin: 0 10px
     text-align: center
     padding: 0 10px
     max-width: 250px
+    @media (max-width: 767px)
+      margin-bottom: 30px
+      flex-basis: 50%
     .container-img-badge
       min-height: 82px
     .advantage-inner
@@ -180,6 +203,17 @@ body
       flex-wrap: wrap
       padding: 20px
       border-radius: 6px
+      @media (max-width: 1262px) and (min-width: 1041px)
+        margin: 0 auto
+        justify-content: flex-start
+      @media (max-width: 1262px) and (min-width: 1218px)
+        max-width: 80%
+      @media (max-width: 1217px) and (min-width: 1166px)
+        max-width: 85%
+      @media (max-width: 1166px) and (min-width: 1120px)
+        max-width: 90%
+      @media (max-width: 1120px) and (min-width: 1080px)
+        max-width: 95%
       & > .block
         flex-basis: 20%
         margin: 0 10px 20px 10px
@@ -240,13 +274,17 @@ body
   .content-container
     display: flex
     margin-top: 40px
-    padding: 0 80px
+    padding: 0 80px 0 60px
     justify-content: center
+    @media (max-width: 950px)
+      flex-wrap: wrap
     .review-block
       flex-basis: 30%
       min-width: 200px
       max-width: 300px
       margin: 0 20px
+      @media (max-width: 950px)
+        flex-basis: 100%
       .pic-container
         position: relative
         display: inline-block
